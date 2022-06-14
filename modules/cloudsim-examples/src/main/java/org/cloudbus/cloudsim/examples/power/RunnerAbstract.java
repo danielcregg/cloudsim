@@ -177,13 +177,21 @@ public abstract class RunnerAbstract {
 
 			CloudSim.stopSimulation();
 
+			// Helper.printResults(
+			// 		datacenter,
+			// 		vmList,
+			// 		lastClock,
+			// 		experimentName,
+			// 		Constants.OUTPUT_CSV,
+			// 		outputFolder);
+
 			Helper.printResults(
-					datacenter,
-					vmList,
-					lastClock,
-					experimentName,
-					Constants.OUTPUT_CSV,
-					outputFolder);
+				datacenter,
+				vmList,
+				lastClock,
+				experimentName,
+				true,
+				outputFolder);
 
 		} catch (Exception e) {
 			e.printStackTrace();
