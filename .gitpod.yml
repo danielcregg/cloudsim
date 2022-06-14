@@ -1,0 +1,6 @@
+# Gitpod Config
+# Maven clean and compile code on startup
+tasks:
+  - init: mvn clean compile
+
+
