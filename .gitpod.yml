@@ -1,6 +1,10 @@
-# Gitpod Config
-# Maven clean and compile code on startup
+image:
+  file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
+
 tasks:
-  - init: mvn clean compile
-
-
+  - init: 'mvn clean compile'
+    command: 'echo "TODO: Replace with command to start project"'
